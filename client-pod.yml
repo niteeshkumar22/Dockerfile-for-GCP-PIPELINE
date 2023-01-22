@@ -4,7 +4,7 @@ kind: Pod
 
 metadata:
 
-  name: cluster1-ng-1af32b9d-Node
+  name: cluster1
 
 spec:
 
