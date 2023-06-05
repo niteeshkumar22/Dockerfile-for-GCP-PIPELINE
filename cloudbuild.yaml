@@ -1,0 +1,21 @@
+steps:
+  # Step 1: Build the Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/image1'
+      - '.'
+  
+  # Step 2: Push the Docker image to Google Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'gcr.io/$PROJECT_ID/image1'
+  
+  # Additional steps...
+  # Add any additional steps you need for your build process, such as deploying the image to a Kubernetes cluster or running tests.
+  
+images:
+  # Specify the Docker image to be pushed to Google Container Registry
+  - 'gcr.io/$PROJECT_ID/image1'
