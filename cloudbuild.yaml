@@ -19,3 +19,14 @@ steps:
 images:
   # Specify the Docker image to be pushed to Google Container Registry
   - 'gcr.io/$PROJECT_ID/image1'
+
+ Step 3: Deploy the Docker image to GCE
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'compute'
+      - 'instances'
+      - 'update-container'
+      - 'instance-1'
+      - '--container-image=gcr.io/project-terraform-test-386209/image1:latest'
+      - '--zone=us-central1-c'
+      - '--project=project-terraform-test-386209'
