@@ -16,16 +16,6 @@ steps:
   # Additional steps...
   
 
-  # Step 3: Deploy the Docker image to Cloud Run
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args:
-      - 'run'
-      - 'deploy'
-      - 'my-cloud-run-service'
-      - '--image=gcr.io/$PROJECT_ID/image1'
-      - '--region=us-central1'
-      - '--platform=managed'
-
   # Add any additional steps you need for your build process, such as deploying the image to a Kubernetes cluster or running tests..
   
 images:
