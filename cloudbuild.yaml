@@ -26,7 +26,7 @@ steps:
       - '--region=us-central1'
       - '--platform=managed'
 
-  # Add any additional steps you need for your build process, such as deploying the image to a Kubernetes cluster or running tests.
+  # Add any additional steps you need for your build process, such as deploying the image to a Kubernetes cluster or running tests..
   
 images:
   # Specify the Docker image to be pushed to Google Container Registry
