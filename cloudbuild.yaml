@@ -13,7 +13,7 @@ steps:
       - 'push'
       - 'gcr.io/$PROJECT_ID/image1'
   
-  # Additional steps... 
+  # Additional steps....
   # Step 3: Deploy the Docker image to Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
