@@ -27,6 +27,6 @@ images:
       - 'instances'
       - 'update-container'
       - 'instance-1'
-      - '--container-image=gcr.io/project-terraform-test-386209/image1:latest'
+      - '--container-image=gcr.io/project-terraform-test-386209/image1'
       - '--zone=us-central1-c'
       - '--project=project-terraform-test-386209'
