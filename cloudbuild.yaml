@@ -22,7 +22,7 @@ steps:
       - 'run'
       - 'deploy'
       - 'my-cloud-run-service'
-      - '--image=gcr.io/$PROJECT_ID/image1:latest'
+      - '--image=gcr.io/$PROJECT_ID/image1'
       - '--region=us-central1'
       - '--platform=managed'
 
